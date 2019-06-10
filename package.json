@@ -1,0 +1,17 @@
+{
+  "name": "knowbly-tabs-accordion",
+  "version": "1.15.1",
+  "description": "Knowbly Widget: Tabs-Accordion",
+  "scripts": {
+    "sandbox:build": "rollup -c config/sandbox.rollup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Knowbly/knowbly-tabs-accordion.git"
+  },
+  "author": "Team",
+  "license": "ISC",
+  "knowDependencies": {
+    "knowbly-widget-components": "1.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+# knowbly-tabs-accordion

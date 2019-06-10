@@ -1,0 +1,98 @@
+{
+  "name": "Tabs",
+  "component": "TabsAccordion",
+  "widgetMode": "tabs",
+  "category": "Display",
+  "templateSlug": "tabsacc",
+  "icon": "knowbly-tabs",
+  "info": "<p>This template allows you to present images, audio, and video elements within a single collection. You can choose between various forms of navigation. This widget encourages the learners to as review the collection as a series of media linked in either a comparative or contrasting relationship.</p>",
+  "sampleLink": "",
+  "allowedMediaFormats": [
+    "jpg",
+    "png",
+    "jpeg",
+    "gif",
+    "tif",
+    "tiff",
+    "bmp",
+    "mp3",
+    "mp4",
+    "aac",
+    "ogg",
+    "mpg",
+    "mpef",
+    "mpe",
+    "mpv",
+    "m4p",
+    "m4v",
+    "webm",
+    "avi",
+    "mov",
+    "mpeg"
+  ],
+  "help": "help!!!",
+  "toolTips": [
+    {
+      "name": "changeModeSelect",
+      "text": "Display your content under inline Tab headers, or as a column of expandable Accordion rows."
+    }
+  ],
+  "displayMode": "responsive",
+  "editorLayerOptions": {
+    "changeModeOptions": {
+      "values": [
+        "Tabs",
+        "Accordion"
+      ]
+    },
+    "layers": [
+      {
+        "name": "tab",
+        "label": "Tab",
+        "color": "#00B8D6",
+        "fields": [
+          {
+            "name": "title",
+            "slot": "bodyLeft",
+            "type": "PlainTextField",
+            "options": {
+              "label": "Header",
+              "placeholder": "Add title..."
+            },
+            "rules": [
+              {
+                "name": "hasContent",
+                "highlight": true,
+                "message": "Error - Header is required"
+              }
+            ]
+          },
+          {
+            "name": "content",
+            "slot": "bodyRight",
+            "type": "RichTextField",
+            "options": {
+              "label": "Content",
+              "placeholder": "Add content...",
+              "layoutType": "paragraph"
+            },
+            "rules": [
+              {
+                "name": "hasContent",
+                "highlight": true,
+                "message": "Error - Content is required"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "defaultItem": {
+    "title": "",
+    "content": "",
+    "linkedMedia": []
+  },
+  "settings": [],
+  "status": "enabled"
+}

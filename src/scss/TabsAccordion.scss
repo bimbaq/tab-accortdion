@@ -1,0 +1,93 @@
+@import "../../../../shared/knowbly-widget-components/src/scss/base";
+//
+// Tabs Accordion Styles
+//
+.kiot-tabs-accordion {
+
+    .kio-widget-body {
+        overflow: hidden;
+        height: auto !important;
+        border-radius: 0;
+        border: 0px;
+    }
+
+    .kio-tabs-content {
+        border-top: 0;
+    }
+    
+    &[data-resize="Desktop"],
+    &[data-resize="Tablet"]
+    {
+        .kio-tabs-header button {
+            padding: 16px !important;
+        }
+    }
+}
+
+.kio-tabs-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    padding: 1px 1px 0 1px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.kio-accordion-header .accordion-button,
+.kio-tabs-header button {
+    min-height: 56px;
+}
+
+.kio-accordion-header {
+
+    // put the prefix after
+    .content-trigger {
+        margin-bottom: 1px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.is-open {
+            margin-bottom: 0;
+        }
+    }
+
+    .kio-accordion-content {
+        border-top: 0;
+    }
+
+    &:not(:last-child) {
+
+        .kio-accordion-content {
+            border-bottom: 0;
+        }
+    }
+}
+
+.kio-tabs-header {
+    padding: 0;
+    flex: auto 1 2;
+    line-height: 16px;
+    text-align: center;
+
+    button {
+        transition: none;
+        border: 0;
+        width: 100%;
+        line-height: 1;
+        padding: 0 16px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: inset 1px -1px 0px 0px  #ffffff;
+    }
+}
+
+.kio-accordion-content,
+.kio-tabs-content {
+    padding: 16px;
+}
+
+.kio-tabs-content{
+    min-height: 320px;
+}
